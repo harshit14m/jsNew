@@ -248,3 +248,70 @@
 //     }
 // }
 // console.log(largest);
+
+// const item = {
+//     price: 99,
+//     discount: 50,
+//     color: ["red", "yellow"]
+// };
+// console.log(item.color[0]);
+
+// const student = {
+//     name: "shradha",
+//     age: 32,
+//     marks: 94.4,
+//     city: "Delhi"
+// };
+// console.log(student);
+// student.city = "Mumbai";
+// console.log(student);
+// console.log(student.city);
+// student.gender = "female";
+// console.log(student);
+// console.log(student.gender);
+// student.marks = "A";
+// console.log(student);
+// console.log(student.marks);
+
+// delete student.marks;
+// console.log(student);
+
+// const classInfo = {
+//     aman: {
+//         grade: "A+",
+//         city: "Delhi"
+//     },
+//     shradha: {
+//         grade: "A",
+//         city: "Pune"
+//     },
+//     karan: {
+//         grade: "O",
+//         city: "Mumbai"
+//     }
+// };
+
+const classInfo = [
+    {
+        name: "aman",
+        grade: "A+",
+        city: "Delhi"
+    },
+    {
+        name: "shradha",
+        grade: "A+",
+        city: "Pune"
+    },
+    {
+        name: "karan",
+        grade: "O",
+        city: "Mumbai"
+    }];
+
+    console.log(classInfo[1].city);
+    console.log(classInfo[2].grade);
+    console.log(classInfo[0].name)
+    classInfo[2].city = "Gurugaon";
+    console.log(classInfo[2]);
+    classInfo[1].gender = "female";
+    console.log(classInfo[1]);
