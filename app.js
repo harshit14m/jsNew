@@ -262,7 +262,7 @@
 //     marks: 94.4,
 //     city: "Delhi"
 // };
-// console.log(student);
+// console.log(student);     
 // student.city = "Mumbai";
 // console.log(student);
 // console.log(student.city);
@@ -291,27 +291,63 @@
 //     }
 // };
 
-const classInfo = [
-    {
-        name: "aman",
-        grade: "A+",
-        city: "Delhi"
-    },
-    {
-        name: "shradha",
-        grade: "A+",
-        city: "Pune"
-    },
-    {
-        name: "karan",
-        grade: "O",
-        city: "Mumbai"
-    }];
+// const classInfo = [
+//     {
+//         name: "aman",
+//         grade: "A+",
+//         city: "Delhi"
+//     },
+//     {
+//         name: "shradha",
+//         grade: "A+",
+//         city: "Pune"
+//     },
+//     {
+//         name: "karan",
+//         grade: "O",
+//         city: "Mumbai"
+//     }];
 
-    console.log(classInfo[1].city);
-    console.log(classInfo[2].grade);
-    console.log(classInfo[0].name)
-    classInfo[2].city = "Gurugaon";
-    console.log(classInfo[2]);
-    classInfo[1].gender = "female";
-    console.log(classInfo[1]);
+//     console.log(classInfo[1].city);
+//     console.log(classInfo[2].grade);
+//     console.log(classInfo[0].name)
+//     classInfo[2].city = "Gurugaon";
+//     console.log(classInfo[2]);
+//     classInfo[1].gender = "female";
+//     console.log(classInfo[1]);
+
+// console.log(Math.floor(-5.4));
+// console.log(Math.floor(5.4));
+// console.log(Math.ceil(5.1));
+// console.log(Math.ceil(-7.9));
+// let randomNumber = Math.floor(Math.random()*5)+1;
+// console.log(randomNumber);
+
+
+// let x = Math.floor(Math.random()*100)+1;
+// console.log(x);
+
+// let y = Math.floor(Math.random()*5)+1;
+// console.log(y);
+
+// let x = Math.floor(Math.random()*5)+21;
+// console.log(x);
+
+const max = prompt("enter the maximum number");
+let numb = Math.floor(Math.random()*max)+1;
+let guessN = prompt("guess the number");
+while (true) {
+    if(guessN == "quit"){
+        console.log("You quit the game");
+        break;
+    }else if(guessN == numb){
+        console.log(`you are right, number is ${numb}`);
+        break;
+    }else if(guessN > numb){
+        guessN = prompt("your guess is too large, try again");
+    }else if(guessN < numb){
+        guessN = prompt("your guess is too small, try again");
+    }else{
+        guessN = prompt("your guess is wrong, try again");
+    }
+}
